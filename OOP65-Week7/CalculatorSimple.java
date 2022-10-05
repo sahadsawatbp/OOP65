@@ -68,4 +68,7 @@ public class CalculatorSimple {
         fr.pack();
         fr.setVisible(true);
     }
+    public static void main(String[] args) {
+        new CalculatorSimple();
+    }
 }

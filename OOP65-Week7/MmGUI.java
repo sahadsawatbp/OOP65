@@ -11,12 +11,12 @@ public class MmGUI {
         fr = new JFrame("SubMenuItem Demo");
         fr.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         desktopPane = new JDesktopPane();
-        frame1 = new JInternalFrame("Application01");
-        frame2 = new JInternalFrame("Application02");
-        frame3 = new JInternalFrame("Application03");
-        frame1.setSize(200,200);
+        frame1 = new JInternalFrame("Application01",true,true,true,true);
+        frame2 = new JInternalFrame("Application02",true,true,true,true);
+        frame3 = new JInternalFrame("Application03",true,true,true,true);
+        frame1.setSize(400,200);
         frame1.setVisible(true);
-        frame2.setSize(200,200);
+        frame2.setSize(200,400);
         frame2.setVisible(true);
         frame3.setSize(200,200);
         frame3.setVisible(true);
@@ -53,5 +53,14 @@ public class MmGUI {
         fr.setMinimumSize(new Dimension(300,300));
         fr.setSize(1080,800);
         fr.setVisible(true);
+        
+    }
+    public static void main(String[] args) {
+       try {
+            UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
+            } catch (Exception e) {
+            e.printStackTrace();
+            }
+            SwingUtilities.invokeLater(() -> { MmGUI frame = new MmGUI(); });
     }
 }
