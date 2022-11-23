@@ -16,7 +16,7 @@ public class MyClock extends JLabel implements Runnable{
                 int hour = d.get(Calendar.HOUR_OF_DAY);
                 this.setFont(new Font("Verdana", Font.PLAIN, 72));
                 this.setText(String.format("%02d:%02d:%02d", hour,min,sec));
-                Thread.sleep(1);
+                
             }catch(Exception e){
                 System.out.println(e);
             }
