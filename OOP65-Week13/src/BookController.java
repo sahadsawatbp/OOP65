@@ -74,6 +74,7 @@ public class BookController implements ActionListener,WindowListener{
             }else{
                 setInterface(index-1);
             }
+            JOptionPane.showMessageDialog(null, "Done it.", "",JOptionPane.PLAIN_MESSAGE);
         }
     }
     public void setInterface(int index){
