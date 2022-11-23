@@ -37,7 +37,7 @@ public class BookAdd {
         pn2.add(bt1);
         fr.add(pn1, BorderLayout.NORTH);
         fr.add(pn2, BorderLayout.SOUTH);
-        fr.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        fr.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         fr.pack();
         fr.setVisible(true);
         fr.setLocationRelativeTo(null);
